@@ -1,0 +1,131 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "mixins.scss";
+@import "buttons.scss";
+
+body {
+    font-family: 'Roboto';
+    background-color: #fbfbfb;
+}
+
+.welcome {
+	font-weight: 100;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url('/images/welcome-background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-color: #aaff00;
+	@include preserve-3d;
+	.container {
+		@include vertical-align;
+	}
+	.title {
+	    font-size: 36px;
+	    margin-bottom: 20px;
+	}
+	a {
+		color: black;
+		font-size: 14px;
+		text-decoration: underline;
+	}
+	.form-register {
+	    margin-top: 40px;
+	}
+	input[type="email"], input[type="password"], input[type="text"] {
+		font-size: 15px;
+		height: 45px;
+	}
+	.form-group {
+		border: 0px;
+		box-shadow: none;
+	}
+}
+.navbar {
+	background-color: #aaff00;
+}
+
+.navbar a {
+	font-size: 14px;
+	color: #212121;
+}
+
+.navbar-right {
+    float: right;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}
+
+.progress-metric {
+	float: right;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.card {
+	background-color: white;
+	border: 1px solid #EEE;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	font-size: 12px;
+	.header {
+		background-color: #aaff00;
+	}
+
+	.header h1 {
+		margin: 0px;
+		padding: 13px 15px;
+		font-size: 11px;
+		font-weight: 800;
+	}
+	ul {
+		margin-bottom: 3px;
+		padding-left: 0px;
+	}
+	li {
+		list-style: none;
+		padding: 15px 0px;
+		border-bottom: 1px solid #EEE;
+	}
+	li:last-child {
+		border-bottom: 0px;
+	}
+}
+
+.material-icons.back-icon {
+    float: left;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.settings {
+	#quit_date {
+		padding-left: 50px;
+	}
+	.settings-field {
+	    text-align: center;
+	    width: 100%;
+	    font-size: 18px;
+	    padding: 10px;
+	    border: 0px;
+	}
+	label {
+    	margin-bottom: 0;
+    	padding: 10px 15px;
+    }
+    .settings-submit {
+    	text-align: center;
+    }
+    .dollar-sign {
+        text-align: left;
+        font-size: 18px;
+        padding: 10px 10px 10px 20px;
+        position: absolute;
+    }
+}
+
+
+
