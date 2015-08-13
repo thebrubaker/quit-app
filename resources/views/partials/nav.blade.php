@@ -6,6 +6,5 @@
 			</span>
 			@yield('nav-icon')
 		</div>
-		
 	</div>
 </nav>

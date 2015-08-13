@@ -12,9 +12,7 @@
 */
 
 // Welcome route...
-Route::get('/', function () {
-    return view('auth.welcome');
-});
+Route::get('/', 'Auth\AuthController@getWelcome');
 
 // User profile routes...
 Route::get('/home', 'User\UserController@getDashboard');

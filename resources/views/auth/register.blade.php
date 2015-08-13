@@ -32,6 +32,10 @@
                     <input type="password" id="password" name="password" placeholder="Password" class="form-control">
                 </div>
                 <div class="form-group">
+                    <label for="password_confirmation" class="sr-only">Password Confirmation</label>
+                    <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Password Confirmation" class="form-control">
+                </div>
+                <div class="form-group">
                     <button type="submit" class="btn btn-primary form-control">Register</button>
                 </div>
             </form>
