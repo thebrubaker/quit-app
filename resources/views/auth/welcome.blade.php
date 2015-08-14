@@ -6,7 +6,7 @@
 <div class="welcome">
     <div class="container">
         <div class="content">
-            <div class="title">Rescue Quit App</div>          
+            <div class="title">Joel's Quit App</div>          
             <div class="row">
                 <a href="{{url('auth/login')}}">Login</a>
                 <span> | </span>

@@ -3,13 +3,7 @@
 @section('title', ' - Dashboard')
 
 @section('nav')
-	@extends('partials.nav')
-		@section('nav-brand')
-			<a href="{{url('/')}}">Rescue Quit App</a>
-		@endsection
-		@section('nav-icon')
-			<a href="{{url('quit')}}" class="navbar-right"><i class="material-icons">settings</i></a>
-		@endsection
+	@include('user.nav')
 @endsection
 
 @section('content')
@@ -28,7 +22,48 @@
 	</div>
 	<div class="stat">
 		<div class="metric">{{$user->quit->notSmoked()}} Cigarettes</div>
-		<div class="description">Not Inhaled By Your Lungs</div>
+		<div class="description">Not Smoked</div>
+	</div>
+</section>
+<section class="updates">
+	<div class="update-item card">
+		<img src="/images/joel.jpg" alt="" class="profile-thumb">
+		<a href="#" class="update-link">
+			<span class="update">
+				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+			</span>
+			<span class="timestamp">25 Minutes Ago</span>
+		</a>
+		<div class="actions">
+			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
+			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+		</div>
+	</div>
+	<div class="update-item card">
+		<img src="/images/joel.jpg" alt="" class="profile-thumb">
+		<a href="#" class="update-link">
+			<span class="update">
+				<span class="bold">Joel Brubaker</span> hasn't smoked for <span class="bold">40 days.</span>
+			</span>
+			<span class="timestamp">1 Day Ago</span>
+		</a>
+		<div class="actions">
+			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
+			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+		</div>
+	</div>
+	<div class="update-item card">
+		<img src="/images/joel.jpg" alt="" class="profile-thumb">
+		<a href="#" class="update-link">
+			<span class="update">
+				<span class="bold">Bill Murray</span> saved <span class="bold">$750.00.</span>
+			</span>
+			<span class="timestamp">3 Days Ago</span>
+		</a>
+		<div class="actions">
+			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
+			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+		</div>
 	</div>
 </section>
 

@@ -3,10 +3,7 @@
 @section('title', ' - Dashboard')
 
 @section('nav')
-    @extends('partials.nav')
-    @section('nav-brand')
-        <a href="{{url('/home')}}"><i class="material-icons back-icon">arrow_back</i>Settings</a>
-    @stop
+    @include('quit.nav')
 @stop
 
 @section('content')

@@ -6003,6 +6003,9 @@ body {
   font-family: 'Roboto';
   background-color: #eee; }
 
+.alert {
+  text-align: left; }
+
 .welcome {
   font-weight: 100;
   text-align: center;
@@ -6036,7 +6039,9 @@ body {
     box-shadow: none; }
 
 .navbar {
-  background-color: #aaff00; }
+  background-color: #aaff00;
+  border: none;
+  margin-bottom: 0px; }
 
 .navbar a {
   font-size: 14px;
@@ -6049,6 +6054,17 @@ body {
   line-height: 20px;
   height: 50px; }
 
+.tab {
+  float: left;
+  padding: 15px 0px;
+  line-height: 20px;
+  height: 50px;
+  width: 33.333%;
+  text-align: center; }
+
+.tab.active {
+  border-bottom: 4px solid white; }
+
 .progress-metric {
   float: right;
   font-size: 16px;
@@ -6056,8 +6072,6 @@ body {
 
 .card {
   background-color: white;
-  border: 1px solid #EEE;
-  border-radius: 4px;
   margin-bottom: 15px;
   font-weight: 300;
   font-size: 12px; }
@@ -6083,33 +6097,31 @@ body {
   font-size: 20px;
   margin-right: 10px; }
 
-.settings #quit_date {
-  padding-left: 50px; }
-
-.settings .settings-field {
-  text-align: center;
-  width: 100%;
-  font-size: 18px;
-  padding: 10px;
-  border: 0px; }
-
-.settings label {
-  margin-bottom: 0;
-  padding: 10px 15px; }
-
-.settings .settings-submit {
-  text-align: center; }
-
-.settings .dollar-sign {
-  text-align: left;
-  font-size: 18px;
-  padding: 10px 10px 10px 20px;
-  position: absolute; }
+.settings {
+  margin-top: 20px; }
+  .settings #quit_date {
+    padding-left: 50px; }
+  .settings .settings-field {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: 0px; }
+  .settings label {
+    margin-bottom: 0;
+    padding: 10px 15px; }
+  .settings .settings-submit {
+    text-align: center; }
+  .settings .dollar-sign {
+    text-align: left;
+    font-size: 18px;
+    padding: 10px 10px 10px 20px;
+    position: absolute; }
 
 .home {
   background-color: white;
-  padding: 20px;
-  margin-top: -20px; }
+  padding: 30px 20px;
+  margin-bottom: 20px; }
 
 .stat {
   display: inline-block;
@@ -6136,5 +6148,58 @@ body {
   .main-stat .metric {
     font-weight: 800;
     font-size: 48px; }
+
+.updates a {
+  color: #333333; }
+
+.updates a:hover {
+  color: #333333;
+  text-decoration: none; }
+
+.updates a:visited {
+  color: #333333;
+  text-decoration: none; }
+
+.updates img {
+  width: 70px;
+  height: 70px;
+  background-color: #333;
+  position: absolute;
+  left: -65px; }
+
+.updates .update-item {
+  height: 70px; }
+
+.updates .update-link {
+  display: block;
+  float: left;
+  padding: 15px 0px 15px 15px; }
+
+.updates .update {
+  display: block;
+  margin-bottom: 5px; }
+
+.updates .bold {
+  font-weight: 600; }
+
+.updates .timestamp {
+  display: block;
+  font-size: 11px; }
+
+.updates .actions {
+  position: absolute;
+  right: 0;
+  padding: 13px 20px 13px 13px; }
+
+.updates .actions a {
+  color: #aaa; }
+
+.updates .gif-icon {
+  padding-right: 15px;
+  font-size: 30px;
+  border-right: 1px solid #EEE; }
+
+.updates .smile-icon {
+  padding-left: 15px; }
 
 /*# sourceMappingURL=app.css.map */
