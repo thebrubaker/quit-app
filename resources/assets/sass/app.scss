@@ -89,28 +89,6 @@ body {
 	margin-bottom: 15px;
 	font-weight: 300;
 	font-size: 12px;
-	.header {
-		background-color: #aaff00;
-	}
-
-	.header h1 {
-		margin: 0px;
-		padding: 13px 15px;
-		font-size: 11px;
-		font-weight: 800;
-	}
-	ul {
-		margin-bottom: 3px;
-		padding-left: 0px;
-	}
-	li {
-		list-style: none;
-		padding: 15px 0px;
-		border-bottom: 1px solid #EEE;
-	}
-	li:last-child {
-		border-bottom: 0px;
-	}
 }
 
 .material-icons.back-icon {
@@ -188,6 +166,7 @@ body {
 .updates {
 	a {
 		color: #333333;
+		display: block;
 	}
 	a:hover {
 		color: #333333;
@@ -197,47 +176,45 @@ body {
 		color: #333333;
 		text-decoration: none;
 	}
-	img {
-		width: 70px;
-		height: 70px;
-		background-color: #333;
-		position: absolute;
-		left: -65px;
-	}
 	.update-item {
-	    height: 70px;
-	}
-	.update-link {
-	    display: block;
-	    float: left;
-	    padding: 15px 0px 15px 15px;
-	}
-	.update {
-	    display: block;
-	    margin-bottom: 5px;
-	}
-	.bold {
-	    font-weight: 600;
-	}
-	.timestamp {
-	    display: block;
-	    font-size: 11px;
-	}
-	.actions {
-	    position: absolute;
-	    right: 0;
-	    padding: 13px 20px 13px 13px;
-	}
-	.actions a {
-	    color: #aaa;
-	}
-	.gif-icon {
-	    padding-right: 15px;
-	    font-size: 30px;
-	    border-right: 1px solid #EEE;
-	}
-	.smile-icon {
-	    padding-left: 15px;
+	    display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        .status {
+            width: auto;
+            align-self: stretch;
+            flex-grow: 1;
+            .milestone {
+                margin-bottom: 5px;
+            }
+            .bold {
+                font-weight: 600;
+            }
+            .timestamp {
+                font-size: 11px;
+            }
+        }
+    	.actions {
+    	    flex-grow: 1;
+    	    width: auto;
+    	    text-align: center;
+    	    margin-left: 10px;
+    	    a {
+        	    color: #aaa;
+        	    display: inline;
+        	}
+        	.gif-icon {
+        	    padding-right: 15px;
+        	    font-size: 30px;
+        	    border-right: 1px solid #EEE;
+        	}
+        	.smile-icon {
+        	    padding-left: 15px;
+        	}
+    	}
 	}
 }
 

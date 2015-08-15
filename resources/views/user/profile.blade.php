@@ -27,39 +27,60 @@
 </section>
 <section class="updates">
 	<div class="update-item card">
-		<img src="/images/joel.jpg" alt="" class="profile-thumb">
-		<a href="#" class="update-link">
-			<span class="update">
+		<div class="status">
+			<a href="#" class="milestone">
 				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
-			</span>
-			<span class="timestamp">25 Minutes Ago</span>
-		</a>
+			</a>
+			<a href="#" class="timestamp">25 Minutes Ago</a>
+		</div>
 		<div class="actions">
 			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
 			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
 		</div>
 	</div>
 	<div class="update-item card">
-		<img src="/images/joel.jpg" alt="" class="profile-thumb">
-		<a href="#" class="update-link">
-			<span class="update">
-				<span class="bold">Joel Brubaker</span> hasn't smoked for <span class="bold">40 days.</span>
-			</span>
-			<span class="timestamp">1 Day Ago</span>
-		</a>
+		<div class="status">
+			<a href="#" class="milestone">
+				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+			</a>
+			<a href="#" class="timestamp">25 Minutes Ago</a>
+		</div>
 		<div class="actions">
 			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
 			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
 		</div>
 	</div>
 	<div class="update-item card">
-		<img src="/images/joel.jpg" alt="" class="profile-thumb">
-		<a href="#" class="update-link">
-			<span class="update">
-				<span class="bold">Bill Murray</span> saved <span class="bold">$750.00.</span>
-			</span>
-			<span class="timestamp">3 Days Ago</span>
-		</a>
+		<div class="status">
+			<a href="#" class="milestone">
+				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+			</a>
+			<a href="#" class="timestamp">25 Minutes Ago</a>
+		</div>
+		<div class="actions">
+			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
+			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+		</div>
+	</div>
+	<div class="update-item card">
+		<div class="status">
+			<a href="#" class="milestone">
+				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+			</a>
+			<a href="#" class="timestamp">25 Minutes Ago</a>
+		</div>
+		<div class="actions">
+			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
+			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+		</div>
+	</div>
+	<div class="update-item card">
+		<div class="status">
+			<a href="#" class="milestone">
+				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+			</a>
+			<a href="#" class="timestamp">25 Minutes Ago</a>
+		</div>
 		<div class="actions">
 			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
 			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>

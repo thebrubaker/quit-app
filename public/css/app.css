@@ -6075,22 +6075,6 @@ body {
   margin-bottom: 15px;
   font-weight: 300;
   font-size: 12px; }
-  .card .header {
-    background-color: #aaff00; }
-  .card .header h1 {
-    margin: 0px;
-    padding: 13px 15px;
-    font-size: 11px;
-    font-weight: 800; }
-  .card ul {
-    margin-bottom: 3px;
-    padding-left: 0px; }
-  .card li {
-    list-style: none;
-    padding: 15px 0px;
-    border-bottom: 1px solid #EEE; }
-  .card li:last-child {
-    border-bottom: 0px; }
 
 .material-icons.back-icon {
   float: left;
@@ -6150,7 +6134,8 @@ body {
     font-size: 48px; }
 
 .updates a {
-  color: #333333; }
+  color: #333333;
+  display: block; }
 
 .updates a:hover {
   color: #333333;
@@ -6160,46 +6145,52 @@ body {
   color: #333333;
   text-decoration: none; }
 
-.updates img {
-  width: 70px;
-  height: 70px;
-  background-color: #333;
-  position: absolute;
-  left: -65px; }
-
 .updates .update-item {
-  height: 70px; }
-
-.updates .update-link {
-  display: block;
-  float: left;
-  padding: 15px 0px 15px 15px; }
-
-.updates .update {
-  display: block;
-  margin-bottom: 5px; }
-
-.updates .bold {
-  font-weight: 600; }
-
-.updates .timestamp {
-  display: block;
-  font-size: 11px; }
-
-.updates .actions {
-  position: absolute;
-  right: 0;
-  padding: 13px 20px 13px 13px; }
-
-.updates .actions a {
-  color: #aaa; }
-
-.updates .gif-icon {
-  padding-right: 15px;
-  font-size: 30px;
-  border-right: 1px solid #EEE; }
-
-.updates .smile-icon {
-  padding-left: 15px; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px; }
+  .updates .update-item .status {
+    width: auto;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+    .updates .update-item .status .milestone {
+      margin-bottom: 5px; }
+    .updates .update-item .status .bold {
+      font-weight: 600; }
+    .updates .update-item .status .timestamp {
+      font-size: 11px; }
+  .updates .update-item .actions {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: auto;
+    text-align: center;
+    margin-left: 10px; }
+    .updates .update-item .actions a {
+      color: #aaa;
+      display: inline; }
+    .updates .update-item .actions .gif-icon {
+      padding-right: 15px;
+      font-size: 30px;
+      border-right: 1px solid #EEE; }
+    .updates .update-item .actions .smile-icon {
+      padding-left: 15px; }
 
 /*# sourceMappingURL=app.css.map */
