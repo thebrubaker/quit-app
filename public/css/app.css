@@ -6075,6 +6075,8 @@ body {
   margin-bottom: 15px;
   font-weight: 300;
   font-size: 12px; }
+  .card .header {
+    background-color: #aaff00; }
 
 .material-icons.back-icon {
   float: left;
@@ -6115,14 +6117,12 @@ body {
   font-size: 30px;
   line-height: 1;
   padding-left: 15px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-right: 5%; }
   .stat .description {
     font-size: 14px; }
   .stat .metric {
     font-weight: 600; }
-
-.stat:nth-child(2) {
-  margin-right: 10%; }
 
 .stat:last-child {
   margin-bottom: 0px; }
@@ -6161,12 +6161,10 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 15px; }
+  padding: 15px;
+  height: 84px; }
   .updates .update-item .status {
-    width: auto;
-    -webkit-align-self: stretch;
-    -ms-flex-item-align: stretch;
-    align-self: stretch;
+    width: 65%;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
@@ -6175,7 +6173,8 @@ body {
     .updates .update-item .status .bold {
       font-weight: 600; }
     .updates .update-item .status .timestamp {
-      font-size: 11px; }
+      font-size: 11px;
+      color: #bbb; }
   .updates .update-item .actions {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;

@@ -29,7 +29,7 @@
 	<div class="update-item card">
 		<div class="status">
 			<a href="#" class="milestone">
-				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+				<span class="bold">Adam Brohannon</span> hasn't smoked <span class="bold">500 cigarettes.</span>
 			</a>
 			<a href="#" class="timestamp">25 Minutes Ago</a>
 		</div>
@@ -41,7 +41,7 @@
 	<div class="update-item card">
 		<div class="status">
 			<a href="#" class="milestone">
-				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+				<span class="bold">Adam Brohannon</span> saved <span class="bold">$740.00</span> from not smoking.
 			</a>
 			<a href="#" class="timestamp">25 Minutes Ago</a>
 		</div>
@@ -53,7 +53,7 @@
 	<div class="update-item card">
 		<div class="status">
 			<a href="#" class="milestone">
-				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+				<span class="bold">Adam Brohannon</span> went <span class="bold">36 days</span> without smoking a cigarette.
 			</a>
 			<a href="#" class="timestamp">25 Minutes Ago</a>
 		</div>
@@ -65,19 +65,7 @@
 	<div class="update-item card">
 		<div class="status">
 			<a href="#" class="milestone">
-				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
-			</a>
-			<a href="#" class="timestamp">25 Minutes Ago</a>
-		</div>
-		<div class="actions">
-			<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
-			<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
-		</div>
-	</div>
-	<div class="update-item card">
-		<div class="status">
-			<a href="#" class="milestone">
-				<span class="bold">Adam Brohannon</span> didn't smoke <span class="bold">500 cigarettes.</span>
+				<span class="bold">Adam Brohannon</span> has saved <span class="bold">2 days</span> of time not smoking.
 			</a>
 			<a href="#" class="timestamp">25 Minutes Ago</a>
 		</div>
@@ -88,10 +76,4 @@
 	</div>
 </section>
 
-{{-- <ul>
-	<li class="progress-item">Days without smoking: <span class="progress-metric">{{$user->quit->daysQuit()}}</span></li>
-	<li class="progress-item">Money saved: <span class="progress-metric">${{$user->quit->moneySaved()}}</span></li>
-	<li class="progress-item">Time saved: <span class="progress-metric">{{$user->quit->timeSaved()}}</span></li>
-	<li class="progress-item">Cigarettes not smoked: <span class="progress-metric">{{$user->quit->notSmoked()}}</span></li>
-</ul> --}}
 @endsection

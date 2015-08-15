@@ -89,6 +89,9 @@ body {
 	margin-bottom: 15px;
 	font-weight: 300;
 	font-size: 12px;
+	.header {
+		background-color: #aaff00;
+	}
 }
 
 .material-icons.back-icon {
@@ -139,16 +142,13 @@ body {
 	line-height: 1;
 	padding-left: 15px;
 	margin-bottom: 25px;
+	margin-right: 5%;
 	.description {
 		font-size: 14px;
 	}
 	.metric {
 		font-weight: 600;
 	}
-}
-
-.stat:nth-child(2) {
-	margin-right: 10%;
 }
 
 .stat:last-child {
@@ -183,9 +183,9 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 15px;
+        height: 84px;
         .status {
-            width: auto;
-            align-self: stretch;
+            width: 65%;
             flex-grow: 1;
             .milestone {
                 margin-bottom: 5px;
@@ -195,6 +195,7 @@ body {
             }
             .timestamp {
                 font-size: 11px;
+                color: #bbb;
             }
         }
     	.actions {

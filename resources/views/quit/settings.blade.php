@@ -11,6 +11,15 @@
     <div class="container">
         <form method="POST" action="{{url('quit')}}">
             {!! csrf_field() !!}
+            @if(count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
             <div class="card">
                 <div class="header">
                     <label for="quit_date">When did you quit smoking?</label>
@@ -34,7 +43,7 @@
                 <div class="header">
                     <label for="cost_per_pack">How much does a typical pack cost?</label>
                 </div>
-                <span class="dollar-sign">$</span><input type="text" name="cost_per_pack" value="{{ old('cost_per_pack') }}" id="cost_per_pack" class="settings-field">
+                <span class="dollar-sign">$</span><input type="number" step="0.01" name="cost_per_pack" value="{{ old('cost_per_pack') }}" id="cost_per_pack" class="settings-field">
             </div>
 
             <div class="settings-submit">
