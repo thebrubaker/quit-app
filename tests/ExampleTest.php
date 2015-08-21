@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use App\MilestoneCheck;
 
 class ExampleTest extends TestCase
 {
@@ -11,9 +12,8 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicExample()
-    {
-        $this->visit('/')
-             ->see('Laravel 5');
+    public function testMilestoneCheck()
+    {   
+        $this->assertTrue(true);
     }
 }

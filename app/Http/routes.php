@@ -18,6 +18,10 @@ Route::get('/', 'Auth\AuthController@getWelcome');
 Route::get('/home', 'User\UserController@getDashboard');
 Route::get('profile/{id}', 'User\UserController@getProfile');
 
+// Confirm not smoking...
+Route::get('status', 'User\UserController@getStatus');
+Route::post('status', 'User\UserController@postStatus');
+
 // User settings routes...
 Route::get('settings', 'User\UserController@getSettings');
 Route::post('settings', 'User\UserController@postSettings');

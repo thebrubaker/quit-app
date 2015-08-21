@@ -13,9 +13,6 @@
 
 	{{-- Navbar Section --}}
 	@yield('nav')
-
-	{{-- Form Errors --}}
-	@include('partials.flash')
 	
 	{{-- Main Content --}}
 	@yield('content')

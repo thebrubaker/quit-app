@@ -19,3 +19,12 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Quit::class, function (Faker\Generator $faker) {
+    return [
+        'quit_date' => $faker->dateTimeBetween('-45 days', 'now'),
+        'packs_per_week' => $faker->numberBetween(1,4),
+        'cigarettes_per_pack' => $faker->numberBetween(15,25),
+        'cost_per_pack' => $faker->randomFloat(2,5,10),
+    ];
+});

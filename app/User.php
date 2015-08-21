@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\HasSettings;
+use App\Milestone\Milestone;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -40,4 +40,12 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public function quit() {
         return $this->hasOne('App\Quit');
     }
+
+    /**
+     * Return the user's milestones
+     */
+    public function milestones() {
+        return $this->hasMany('App\Milestone\Milestone');
+    }
+
 }

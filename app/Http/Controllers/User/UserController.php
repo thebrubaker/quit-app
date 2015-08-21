@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\User;
 
 use App\User;
+use App\Milestone\MilestoneRepository;
+use App\Milestone\MilestoneCheck;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SettingsRequest;
@@ -32,10 +34,8 @@ class UserController extends Controller
     {
         $user = auth()->user();
         $quit = $user->quit;
-        if(!$quit) {
-            return redirect('quit');
-        }
-        return view('user.profile', compact(['user', 'quit']));
+        $milestones = $user->milestones;
+        return view('user.profile', compact(['user', 'quit', 'milestones']));
     }
 
     /**
@@ -51,7 +51,9 @@ class UserController extends Controller
             flash()->warning('User does not exist.');
             return redirect('/');
         }
-        return view('user.profile', compact('user'));
+        $quit = $user->quit;
+        $milestones = $user->milestones;
+        return view('user.profile', compact(['user', 'quit', 'milestones']));
     }
 
     /**
@@ -100,6 +102,38 @@ class UserController extends Controller
         
         flash()->success('Quit information updated.');
         return redirect('/');
+    }
+
+    /**
+     * Get the form for checking a user's continued commitment to quit smoking
+     *
+     * @return Response
+     */
+    public function getStatus(Request $request)
+    {
+        $milestoneCheck = new MilestoneCheck();
+        $milestoneCheck->checkAndCreateMilestones(['days','money','minutes','cigarettes'], auth()->user());
+        return redirect('home');
+    }
+
+    /**
+     * Check if the user continues to be smokefree
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function postStatus(Request $request)
+    {
+        // If the user is still smokefree, check for milestones
+        if($request->confirmation == 'true') {
+            $repository->checkAndCreateMilestones();
+            return redirect('dashboard');
+        }
+        // If the user has started smoking again, reset settings
+        if($request->confirmation == 'false') {
+            // clear quit settings
+            return redirect('dashboard');
+        }
     }
 
 }

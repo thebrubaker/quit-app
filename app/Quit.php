@@ -23,52 +23,65 @@ class Quit extends Model
 	protected $fillable = ['quit_date', 'packs_per_week', 'cigarettes_per_pack', 'cost_per_pack'];
 
     /**
-     * Return the quit object's user
+     * The objects relationship with the user
      */
     public function user() {
         return $this->belongsTo('App\User');
     }
 
-    public function daysQuit() {
+    public function getByType($type)
+    {
+        if($type == 'days') {
+            return $this->getDays();
+        }
+        if($type == 'money') {
+            return $this->getMoney();
+        }
+        if($type == 'minutes') {
+            return $this->getMinutes();
+        }
+        if($type == 'cigarettes') {
+            return $this->getCigarettes();
+        }
+    }
+
+    public function getDays() {
     	$now = new Carbon();
     	$quit_date = new Carbon($this->quit_date);
     	$days = $now->diffInDays($quit_date);
-    	return number_format($days,0);
+    	return $days;
     }
 
-    public function moneySaved() {
-    	$money = $this->daysQuit() * $this->costPerPack() * $this->packsPerDay();
-    	return number_format($money, 2);
+    public function getMoney() {
+    	$money = $this->getDays() * $this->costPerPack() * $this->packsPerDay();
+    	return round($money, 2);
     }
 
-    public function notSmoked()
+    public function getCigarettes()
     {
-    	$smoked = $this->cigarettesPerDay() * $this->daysQuit();
-    	return number_format($smoked,0);
+    	$smoked = $this->cigarettesPerDay() * $this->getDays();
+    	return round($smoked,0);
     }
 
-    public function costPerPack()
-    {
-    	return $this->cost_per_pack;
-    }
-
-    public function packsPerDay()
-    {
-    	return $this->packs_per_week / 7;
-    }
-
-    public function cigarettesPerDay()
-    {
-    	return $this->packsPerDay() * $this->cigarettes_per_pack;
-    }
-
-    public function timeSaved() {
+    public function getMinutes() {
     	$smokeTime = 5;
-    	$minutes = $this->cigarettesPerDay() * $this->daysQuit() * $smokeTime;
-    	return $this->minutesToTime($minutes);
+    	$minutes = $this->cigarettesPerDay() * $this->getDays() * $smokeTime;
+    	return round($minutes,0);
     }
 
-    public function minutesToTime($minutes) {
-        return Carbon::now()->addMinutes($minutes)->diffForHumans(null,true);
+    private function costPerPack()
+    {
+        return $this->cost_per_pack;
     }
+
+    private function packsPerDay()
+    {
+        return $this->packs_per_week / 7;
+    }
+
+    private function cigarettesPerDay()
+    {
+        return $this->packsPerDay() * $this->cigarettes_per_pack;
+    }
+
 }

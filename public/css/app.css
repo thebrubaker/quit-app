@@ -6014,7 +6014,7 @@ body {
   background-image: url("/images/welcome-background.jpg");
   background-size: cover;
   background-position: center center;
-  background-color: #aaff00;
+  background-color: #e91e63;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
   .welcome .container {
@@ -6039,9 +6039,10 @@ body {
     box-shadow: none; }
 
 .navbar {
-  background-color: #aaff00;
+  background-color: #e91e63;
   border: none;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  border-radius: 0px; }
 
 .navbar a {
   font-size: 14px;
@@ -6076,7 +6077,7 @@ body {
   font-weight: 300;
   font-size: 12px; }
   .card .header {
-    background-color: #aaff00; }
+    background-color: #e91e63; }
 
 .material-icons.back-icon {
   float: left;
@@ -6145,7 +6146,7 @@ body {
   color: #333333;
   text-decoration: none; }
 
-.updates .update-item {
+.updates .milestone {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -6163,33 +6164,36 @@ body {
   align-items: center;
   padding: 15px;
   height: 84px; }
-  .updates .update-item .status {
+  .updates .milestone .status {
     width: 65%;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
-    .updates .update-item .status .milestone {
+    .updates .milestone .status .update {
       margin-bottom: 5px; }
-    .updates .update-item .status .bold {
+    .updates .milestone .status .bold {
       font-weight: 600; }
-    .updates .update-item .status .timestamp {
+    .updates .milestone .status .timestamp {
       font-size: 11px;
       color: #bbb; }
-  .updates .update-item .actions {
+  .updates .milestone .actions {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: auto;
     text-align: center;
     margin-left: 10px; }
-    .updates .update-item .actions a {
+    .updates .milestone .actions a {
       color: #aaa;
       display: inline; }
-    .updates .update-item .actions .gif-icon {
+    .updates .milestone .actions .gif-icon {
       padding-right: 15px;
       font-size: 30px;
       border-right: 1px solid #EEE; }
-    .updates .update-item .actions .smile-icon {
+    .updates .milestone .actions .smile-icon {
       padding-left: 15px; }
+
+.updates .new-milestone {
+  border: 1px solid #e91e63; }
 
 /*# sourceMappingURL=app.css.map */
