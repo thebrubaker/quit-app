@@ -9,6 +9,7 @@
 @section('content')
 <div class="settings">
     <div class="container">
+        <a href="{{url('auth/logout')}}">Logout</a>
         <form method="POST" action="{{url('quit')}}">
             {!! csrf_field() !!}
             @if(count($errors) > 0)

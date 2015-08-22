@@ -6078,7 +6078,8 @@ body {
 .card {
   background-color: white;
   font-weight: 300;
-  font-size: 12px; }
+  font-size: 12px;
+  margin-top: 20px; }
   .card .header {
     background-color: #e91e63; }
 

@@ -16,8 +16,8 @@
 				<a href="{{url('profile/' . $milestone->user->id)}}" class="timestamp">{{$milestone->time()}}</a>
 			</div>
 			<div class="actions">
-				<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
-				<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+				<a href="javascript:void(0);" class="gif-icon"><i class="material-icons">gif</i></a>
+				<a href="javascript:void(0);" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
 			</div>
 		</div>
 	@endforeach
@@ -42,8 +42,8 @@
 				<a href="{{url('profile/' . $milestone->user->id)}}" class="timestamp">{{$milestone->time()}}</a>
 			</div>
 			<div class="actions">
-				<a href="#" class="gif-icon"><i class="material-icons">gif</i></a>
-				<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
+				<a href="javascript:void(0);" class="gif-icon"><i class="material-icons">gif</i></a>
+				<a href="javascript:void(0);" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
 			</div>
 		</div>
 		<div class="gifs">
