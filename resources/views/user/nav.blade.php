@@ -1,11 +1,9 @@
-<nav class="navbar navbar-default">
+<nav class="navbar">
 	<div class="container-fluid">
-		<div class="navbar-header">
 			<span class="navbar-brand">
 				<a href="{{url('/')}}">Joel's Quit App</a>
 			</span>
 			<a href="{{url('quit')}}" class="navbar-right"><i class="material-icons">settings</i></a>
-		</div>
 	</div>
 </nav>
 <nav class="navbar sub-navbar navbar-default">

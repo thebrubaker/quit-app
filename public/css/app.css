@@ -6001,7 +6001,8 @@ button.close {
 
 body {
   font-family: 'Roboto';
-  background-color: #eee; }
+  background-color: #eee;
+  overflow-x: hidden; }
 
 .alert {
   text-align: left; }
@@ -6044,13 +6045,16 @@ body {
   margin-bottom: 0px;
   border-radius: 0px; }
 
+.navbar-brand {
+  padding: 15px 15px 15px 0px; }
+
 .navbar a {
   font-size: 14px;
   color: #212121; }
 
 .navbar-right {
   float: right;
-  padding: 15px 15px;
+  padding: 15px 0px 15px 15px;
   font-size: 18px;
   line-height: 20px;
   height: 50px; }
@@ -6073,7 +6077,6 @@ body {
 
 .card {
   background-color: white;
-  margin-bottom: 15px;
   font-weight: 300;
   font-size: 12px; }
   .card .header {
@@ -6163,7 +6166,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 15px;
-  height: 84px; }
+  height: 84px;
+  margin-top: 20px; }
   .updates .milestone .status {
     width: 65%;
     -webkit-flex-grow: 1;
@@ -6192,8 +6196,43 @@ body {
       border-right: 1px solid #EEE; }
     .updates .milestone .actions .smile-icon {
       padding-left: 15px; }
+    .updates .milestone .actions .selected {
+      color: #e91e63; }
 
 .updates .new-milestone {
   border: 1px solid #e91e63; }
+
+.gifs {
+  display: none;
+  overflow-x: scroll;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 0px 5px;
+  background-color: #bbb;
+  border-top: 1px solid #aaa; }
+  .gifs .overflow {
+    width: 200%; }
+  .gifs .gif {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    float: left;
+    margin: 9px 5px;
+    background-color: black;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .gifs .gif img {
+      width: 100%; }
+    .gifs .gif a {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+
+.gifs::-webkit-scrollbar {
+  display: none; }
 
 /*# sourceMappingURL=app.css.map */

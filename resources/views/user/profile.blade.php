@@ -22,7 +22,7 @@
 	</div>
 	<div class="stat">
 		<div class="metric">{{$user->quit->getCigarettes()}} Cigarettes</div>
-		<div class="description">Not Smoked</div>
+		<div class="description">Not Smoked Since You Quit</div>
 	</div>
 </section>
 <section class="updates">

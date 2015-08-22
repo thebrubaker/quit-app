@@ -7,6 +7,7 @@ $primary-color: #e91e63;
 body {
     font-family: 'Roboto';
     background-color: #eee;
+    overflow-x: hidden;
 }
 
 .alert {
@@ -55,6 +56,10 @@ body {
 	border-radius: 0px;
 }
 
+.navbar-brand {
+	padding: 15px 15px 15px 0px;
+}
+
 .navbar a {
 	font-size: 14px;
 	color: #212121;
@@ -62,7 +67,7 @@ body {
 
 .navbar-right {
     float: right;
-    padding: 15px 15px;
+    padding: 15px 0px 15px 15px;
     font-size: 18px;
     line-height: 20px;
     height: 50px;
@@ -89,7 +94,6 @@ body {
 
 .card {
 	background-color: white;
-	margin-bottom: 15px;
 	font-weight: 300;
 	font-size: 12px;
 	.header {
@@ -187,6 +191,7 @@ body {
         align-items: center;
         padding: 15px;
         height: 84px;
+        margin-top: 20px;
         .status {
             width: 65%;
             flex-grow: 1;
@@ -218,11 +223,47 @@ body {
         	.smile-icon {
         	    padding-left: 15px;
         	}
+        	.selected {
+        		color: $primary-color;
+        	}
     	}
 	}
 	.new-milestone {
 		border: 1px solid $primary-color;
 	}
+}
+
+.gifs {
+	display: none;
+    overflow-x: scroll;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+    background-color: #bbb;
+    border-top: 1px solid #aaa;
+    .overflow {
+    	width: 200%;
+    }
+    .gif {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        float: left;
+        margin: 9px 5px;
+        background-color: black;
+        display: flex;
+        img {
+        	width: 100%;
+        }
+        a {
+        	display: flex;
+        	align-items: center;
+        }
+    }
+}
+
+.gifs::-webkit-scrollbar {
+	display: none;
 }
 
 

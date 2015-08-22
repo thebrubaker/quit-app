@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\User;
-use App\Milestone\MilestoneRepository;
+use App\Milestone\Milestone;
 use App\Milestone\MilestoneCheck;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -34,7 +34,7 @@ class UserController extends Controller
     {
         $user = auth()->user();
         $quit = $user->quit;
-        $milestones = $user->milestones;
+        $milestones = Milestone::take(10)->orderBy('created_at', 'desc')->get();
         return view('user.profile', compact(['user', 'quit', 'milestones']));
     }
 

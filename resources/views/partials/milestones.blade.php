@@ -25,6 +25,7 @@
 
 @if ($milestones)
 	@foreach($milestones as $milestone)
+	<div class="milestone-container" id="milestone-{{$milestone->id}}">
 		<div class="card milestone">
 			<div class="status">
 				<a href="{{url('profile/' . $milestone->user->id)}}" class="update">
@@ -45,5 +46,35 @@
 				<a href="#" class="smile-icon"><i class="material-icons">insert_emoticon</i></a>
 			</div>
 		</div>
+		<div class="gifs">
+			<div class="overflow">
+				<div class="gif">
+					<a href="javascript:void(0);">
+						<img src="{{url('/images/gifs/giphy-2.gif')}}" alt="Good Job">
+					</a>
+				</div>
+				<div class="gif">
+					<a href="javascript:void(0);">
+						<img src="{{url('/images/gifs/giphy-3.gif')}}" alt="Good Job">
+					</a>
+				</div>
+				<div class="gif">
+					<a href="javascript:void(0);">
+						<img src="{{url('/images/gifs/giphy-4.gif')}}" alt="Good Job">
+					</a>
+				</div>
+				<div class="gif">
+					<a href="javascript:void(0);">
+						<img src="{{url('/images/gifs/giphy-5.gif')}}" alt="Good Job">
+					</a>
+				</div>
+				<div class="gif">
+					<a href="javascript:void(0);">
+						<img src="{{url('/images/gifs/giphy-6.gif')}}" alt="Good Job">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	@endforeach
 @endif

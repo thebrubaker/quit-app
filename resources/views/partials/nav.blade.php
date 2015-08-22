@@ -1,10 +1,8 @@
-<nav class="navbar navbar-default">
+<nav class="navbar">
 	<div class="container-fluid">
-		<div class="navbar-header">
-			<span class="navbar-brand">
-				@yield('nav-brand')
-			</span>
-			@yield('nav-icon')
-		</div>
+		<span class="navbar-brand">
+			@yield('nav-brand')
+		</span>
+		@yield('nav-icon')
 	</div>
 </nav>

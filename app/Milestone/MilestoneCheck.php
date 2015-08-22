@@ -13,16 +13,13 @@ class MilestoneCheck
 	 * The array of milestones returned
 	 * @var array
 	 */
-	protected $milestones;
-	
+	protected $milestones = [];
+
 	/**
-	 * Create the object
-	 * @param User $user
+	 * The array of milestones returned
+	 * @var array
 	 */
-	function __construct() 
-	{
-		$this->milestones = array();
-	}
+	protected $types = ['days', 'money', 'minutes', 'cigarettes'];
 
 	/**
 	 * Check for eligible milestones and create them
